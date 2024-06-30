@@ -1,0 +1,348 @@
+2023-06-26 12:56:39 [INFO] Running PandasAI with starcoder LLM...
+2023-06-26 12:56:39 [INFO] Prompt ID: 4c759fba-8718-4fc9-924e-81a314bfd4c5
+2023-06-26 12:58:49 [INFO] 
+                        Code generated:
+                        ```
+                        df
+                        ```
+                    
+2023-06-26 12:58:49 [INFO] 
+Code running:
+```
+df
+```
+2023-06-26 12:58:49 [INFO] Answer:     Subject ID         MRI ID        Group  Visit  MR Delay M/F Hand  Age  EDUC  SES  MMSE  CDR  eTIV   nWBV    ASF
+0    OAS2_0001  OAS2_0001_MR1  Nondemented      1         0   M    R   87    14  2.0  27.0  0.0  1987  0.696  0.883
+1    OAS2_0001  OAS2_0001_MR2  Nondemented      2       457   M    R   88    14  2.0  30.0  0.0  2004  0.681  0.876
+2    OAS2_0002  OAS2_0002_MR1     Demented      1         0   M    R   75    12  NaN  23.0  0.5  1678  0.736  1.046
+3    OAS2_0002  OAS2_0002_MR2     Demented      2       560   M    R   76    12  NaN  28.0  0.5  1738  0.713  1.010
+4    OAS2_0002  OAS2_0002_MR3     Demented      3      1895   M    R   80    12  NaN  22.0  0.5  1698  0.701  1.034
+..         ...            ...          ...    ...       ...  ..  ...  ...   ...  ...   ...  ...   ...    ...    ...
+368  OAS2_0185  OAS2_0185_MR2     Demented      2       842   M    R   82    16  1.0  28.0  0.5  1693  0.694  1.037
+369  OAS2_0185  OAS2_0185_MR3     Demented      3      2297   M    R   86    16  1.0  26.0  0.5  1688  0.675  1.040
+370  OAS2_0186  OAS2_0186_MR1  Nondemented      1         0   F    R   61    13  2.0  30.0  0.0  1319  0.801  1.331
+371  OAS2_0186  OAS2_0186_MR2  Nondemented      2       763   F    R   63    13  2.0  30.0  0.0  1327  0.796  1.323
+372  OAS2_0186  OAS2_0186_MR3  Nondemented      3      1608   F    R   65    13  2.0  30.0  0.0  1333  0.801  1.317
+
+[373 rows x 15 columns]
+2023-06-26 12:58:49 [INFO] Executed in: 129.57652163505554s
+2023-06-26 12:59:56 [INFO] Running PandasAI with starcoder LLM...
+2023-06-26 12:59:56 [INFO] Prompt ID: 3264c183-d262-45d8-a6be-8b31b7f239a7
+2023-06-26 13:00:02 [INFO] 
+                        Code generated:
+                        ```
+                        df.groupby(['Subject ID', 'Group']).size().sort_values(ascending=False).head(1)
+                        ```
+                    
+2023-06-26 13:00:02 [INFO] 
+Code running:
+```
+df.groupby(['Subject ID', 'Group']).size().sort_values(ascending=False).head(1)
+```
+2023-06-26 13:00:02 [INFO] Answer: Subject ID  Group      
+OAS2_0070   Nondemented    5
+dtype: int64
+2023-06-26 13:00:02 [INFO] Executed in: 6.412075757980347s
+2023-06-27 18:26:49 [INFO] Running PandasAI with starcoder LLM...
+2023-06-27 18:26:49 [INFO] Prompt ID: fc0e64a6-96fd-45ba-b267-8680eda7b070
+2023-06-27 18:26:52 [INFO] 
+                        Code generated:
+                        ```
+                        df
+                        ```
+                    
+2023-06-27 18:26:52 [INFO] 
+Code running:
+```
+df
+```
+2023-06-27 18:26:52 [INFO] Answer:     Subject ID         MRI ID        Group  Visit  MR Delay M/F Hand  Age  EDUC  SES  MMSE  CDR  eTIV   nWBV    ASF
+0    OAS2_0001  OAS2_0001_MR1  Nondemented      1         0   M    R   87    14  2.0  27.0  0.0  1987  0.696  0.883
+1    OAS2_0001  OAS2_0001_MR2  Nondemented      2       457   M    R   88    14  2.0  30.0  0.0  2004  0.681  0.876
+2    OAS2_0002  OAS2_0002_MR1     Demented      1         0   M    R   75    12  NaN  23.0  0.5  1678  0.736  1.046
+3    OAS2_0002  OAS2_0002_MR2     Demented      2       560   M    R   76    12  NaN  28.0  0.5  1738  0.713  1.010
+4    OAS2_0002  OAS2_0002_MR3     Demented      3      1895   M    R   80    12  NaN  22.0  0.5  1698  0.701  1.034
+..         ...            ...          ...    ...       ...  ..  ...  ...   ...  ...   ...  ...   ...    ...    ...
+368  OAS2_0185  OAS2_0185_MR2     Demented      2       842   M    R   82    16  1.0  28.0  0.5  1693  0.694  1.037
+369  OAS2_0185  OAS2_0185_MR3     Demented      3      2297   M    R   86    16  1.0  26.0  0.5  1688  0.675  1.040
+370  OAS2_0186  OAS2_0186_MR1  Nondemented      1         0   F    R   61    13  2.0  30.0  0.0  1319  0.801  1.331
+371  OAS2_0186  OAS2_0186_MR2  Nondemented      2       763   F    R   63    13  2.0  30.0  0.0  1327  0.796  1.323
+372  OAS2_0186  OAS2_0186_MR3  Nondemented      3      1608   F    R   65    13  2.0  30.0  0.0  1333  0.801  1.317
+
+[373 rows x 15 columns]
+2023-06-27 18:26:52 [INFO] Executed in: 2.996983528137207s
+2023-06-27 18:27:21 [INFO] Running PandasAI with starcoder LLM...
+2023-06-27 18:27:21 [INFO] Prompt ID: 09bbd3ba-5aaa-47c3-836c-6705912cc23d
+2023-06-27 18:27:35 [INFO] 
+                        Code generated:
+                        ```
+                        df.query('Group == "Demented"')['Age'].min()
+                        ```
+                    
+2023-06-27 18:27:35 [INFO] 
+Code running:
+```
+df.query('Group == "Demented"')['Age'].min()
+```
+2023-06-27 18:27:35 [INFO] Answer: 61
+2023-06-27 18:27:35 [INFO] Executed in: 14.212624788284302s
+2023-06-27 18:28:24 [INFO] Running PandasAI with starcoder LLM...
+2023-06-27 18:28:24 [INFO] Prompt ID: efa08036-10d3-4047-9ddf-2109e943cca7
+2023-06-27 18:28:36 [INFO] 
+                        Code generated:
+                        ```
+                        df[df['Group'] == 'Demented']['Visit'].max()
+                        ```
+                    
+2023-06-27 18:28:36 [INFO] 
+Code running:
+```
+df[df['Group'] == 'Demented']['Visit'].max()
+```
+2023-06-27 18:28:36 [INFO] Answer: 5
+2023-06-27 18:28:36 [INFO] Executed in: 12.427598714828491s
+2023-06-27 18:29:10 [INFO] Running PandasAI with starcoder LLM...
+2023-06-27 18:29:10 [INFO] Prompt ID: c893b2c9-c738-4770-95dc-a2846ad6a62a
+2023-06-27 18:29:15 [INFO] 
+                        Code generated:
+                        ```
+                        df.plot.scatter(x='Group', y='Age')
+                        ```
+                    
+2023-06-27 18:29:15 [INFO] 
+Code running:
+```
+df.plot.scatter(x='Group', y='Age')
+```
+2023-06-27 18:29:18 [INFO] Answer: Axes(0.125,0.11;0.775x0.77)
+2023-06-27 18:29:18 [INFO] Executed in: 7.284227132797241s
+2023-08-01 12:57:52 [INFO] Running PandasAI with starcoder LLM...
+2023-08-01 12:57:52 [INFO] Prompt ID: 0fadd2fc-607b-4746-af75-c24725db9a9f
+2023-08-01 12:57:57 [INFO] 
+                        Code generated:
+                        ```
+                        df['Age'].min()
+                        ```
+                    
+2023-08-01 12:57:57 [INFO] 
+Code running:
+```
+df['Age'].min()
+```
+2023-08-01 12:57:57 [INFO] Answer: 60
+2023-08-01 12:57:57 [INFO] Executed in: 4.982607126235962s
+2023-08-01 12:59:15 [INFO] Running PandasAI with starcoder LLM...
+2023-08-01 12:59:15 [INFO] Prompt ID: 0b8607e4-be7c-4e12-8132-c87dc72ec033
+2023-08-01 12:59:19 [INFO] 
+                        Code generated:
+                        ```
+                        df[df['Age'] < 87]
+                        ```
+                    
+2023-08-01 12:59:19 [INFO] 
+Code running:
+```
+df[df['Age'] < 87]
+```
+2023-08-01 12:59:19 [INFO] Answer:     Subject ID         MRI ID        Group  Visit  MR Delay M/F Hand  Age  EDUC  SES  MMSE  CDR  eTIV   nWBV    ASF
+2    OAS2_0002  OAS2_0002_MR1     Demented      1         0   M    R   75    12  NaN  23.0  0.5  1678  0.736  1.046
+3    OAS2_0002  OAS2_0002_MR2     Demented      2       560   M    R   76    12  NaN  28.0  0.5  1738  0.713  1.010
+4    OAS2_0002  OAS2_0002_MR3     Demented      3      1895   M    R   80    12  NaN  22.0  0.5  1698  0.701  1.034
+7    OAS2_0005  OAS2_0005_MR1  Nondemented      1         0   M    R   80    12  4.0  28.0  0.0  1689  0.712  1.039
+8    OAS2_0005  OAS2_0005_MR2  Nondemented      2      1010   M    R   83    12  4.0  29.0  0.5  1701  0.711  1.032
+..         ...            ...          ...    ...       ...  ..  ...  ...   ...  ...   ...  ...   ...    ...    ...
+368  OAS2_0185  OAS2_0185_MR2     Demented      2       842   M    R   82    16  1.0  28.0  0.5  1693  0.694  1.037
+369  OAS2_0185  OAS2_0185_MR3     Demented      3      2297   M    R   86    16  1.0  26.0  0.5  1688  0.675  1.040
+370  OAS2_0186  OAS2_0186_MR1  Nondemented      1         0   F    R   61    13  2.0  30.0  0.0  1319  0.801  1.331
+371  OAS2_0186  OAS2_0186_MR2  Nondemented      2       763   F    R   63    13  2.0  30.0  0.0  1327  0.796  1.323
+372  OAS2_0186  OAS2_0186_MR3  Nondemented      3      1608   F    R   65    13  2.0  30.0  0.0  1333  0.801  1.317
+
+[329 rows x 15 columns]
+2023-08-01 12:59:19 [INFO] Executed in: 3.791884183883667s
+2023-08-01 12:59:57 [INFO] Running PandasAI with starcoder LLM...
+2023-08-01 12:59:57 [INFO] Prompt ID: 8a6f8d68-ddda-4dd4-8c2b-4243301505b3
+2023-08-01 13:00:08 [INFO] 
+                        Code generated:
+                        ```
+                        df.loc[(df['Group'] == 'Nondemented') & (df['Visit'] == 3) & (df['Age'] == 80) & (df['MMSE'] == 23.0) & (df['CDR'] == 0.5) & (df['ASF'] == 0.876)]
+                        ```
+                    
+2023-08-01 13:00:08 [INFO] 
+Code running:
+```
+df.loc[(df['Group'] == 'Nondemented') & (df['Visit'] == 3) & (df['Age'] == 
+    80) & (df['MMSE'] == 23.0) & (df['CDR'] == 0.5) & (df['ASF'] == 0.876)]
+```
+2023-08-01 13:00:08 [INFO] Answer: 
+2023-08-01 13:00:08 [INFO] Executed in: 10.778755187988281s
+2023-08-01 13:00:10 [INFO] Running PandasAI with starcoder LLM...
+2023-08-01 13:00:10 [INFO] Prompt ID: 9613b62f-5d46-4087-8e9a-be1eeaaa5209
+2023-08-01 13:00:10 [INFO] Using cached response
+2023-08-01 13:00:10 [INFO] 
+Code running:
+```
+df.loc[(df['Group'] == 'Nondemented') & (df['Visit'] == 3) & (df['Age'] == 
+    80) & (df['MMSE'] == 23.0) & (df['CDR'] == 0.5) & (df['ASF'] == 0.876)]
+```
+2023-08-01 13:00:10 [INFO] Answer: 
+2023-08-01 13:00:10 [INFO] Executed in: 0.0034208297729492188s
+2023-08-01 13:01:40 [INFO] Running PandasAI with starcoder LLM...
+2023-08-01 13:01:40 [INFO] Prompt ID: f7596e20-3688-4b43-a051-eb89edb39073
+2023-08-01 13:01:44 [INFO] 
+                        Code generated:
+                        ```
+                        df['toss_winner'].value_counts().idxmax()
+                        ```
+                    
+2023-08-01 13:01:44 [INFO] 
+Code running:
+```
+df['toss_winner'].value_counts().idxmax()
+```
+2023-08-01 13:01:44 [INFO] Answer: Mumbai Indians
+2023-08-01 13:01:44 [INFO] Executed in: 3.724385976791382s
+2023-08-02 16:21:21 [INFO] Running PandasAI with starcoder LLM...
+2023-08-02 16:21:22 [INFO] Prompt ID: c879cd31-ffff-4536-8cee-af2323baaf7f
+2023-08-02 16:21:26 [INFO] 
+                        Code generated:
+                        ```
+                        df.groupby(['toss_winner']).count()
+                        ```
+                    
+2023-08-02 16:21:26 [INFO] 
+Code running:
+```
+df.groupby(['toss_winner']).count()
+```
+2023-08-02 16:21:27 [INFO] Answer:                              id  season  city  date  team1  team2  ...  win_by_wickets  player_of_match  venue  umpire1  umpire2  umpire3
+toss_winner                                                        ...                                                                   
+Chennai Super Kings          89      89    89    89     89     89  ...              89               89     89       89       89       23
+Deccan Chargers              43      43    43    43     43     43  ...              43               43     43       43       43        0
+Delhi Capitals               10      10    10    10     10     10  ...              10               10     10        9        9        9
+Delhi Daredevils             80      80    80    80     80     80  ...              80               79     80       80       80        8
+Gujarat Lions                15      15    15    15     15     15  ...              15               15     15       15       15        0
+Kings XI Punjab              81      81    80    81     81     81  ...              81               81     81       81       81       13
+Kochi Tuskers Kerala          8       8     8     8      8      8  ...               8                8      8        8        8        0
+Kolkata Knight Riders        92      92    91    92     92     92  ...              92               92     92       92       92       14
+Mumbai Indians               98      98    96    98     98     98  ...              98               98     98       98       98       13
+Pune Warriors                20      20    20    20     20     20  ...              20               20     20       20       20        0
+Rajasthan Royals             80      80    79    80     80     80  ...              80               78     80       80       80       17
+Rising Pune Supergiant        6       6     6     6      6      6  ...               6                6      6        6        6        0
+Rising Pune Supergiants       7       7     7     7      7      7  ...               7                7      7        7        7        0
+Royal Challengers Bangalore  81      81    80    81     81     81  ...              81               80     81       80       80       11
+Sunrisers Hyderabad          46      46    45    46     46     46  ...              46               46     46       46       46       11
+
+[15 rows x 17 columns]
+2023-08-02 16:21:27 [INFO] Executed in: 5.028952598571777s
+2023-08-02 16:22:19 [INFO] Running PandasAI with starcoder LLM...
+2023-08-02 16:22:19 [INFO] Prompt ID: e5239aff-0a0e-424a-9578-081463ea02a3
+2023-08-02 16:22:32 [INFO] 
+                        Code generated:
+                        ```
+                        df['winner'].value_counts().idxmax()
+                        ```
+                    
+2023-08-02 16:22:32 [INFO] 
+Code running:
+```
+df['winner'].value_counts().idxmax()
+```
+2023-08-02 16:22:32 [INFO] Answer: Mumbai Indians
+2023-08-02 16:22:32 [INFO] Executed in: 13.022187232971191s
+2023-08-02 16:22:59 [INFO] Running PandasAI with starcoder LLM...
+2023-08-02 16:22:59 [INFO] Prompt ID: bfed2017-6e08-47b5-820d-c26bb1e91bbc
+2023-08-02 16:23:06 [INFO] 
+                        Code generated:
+                        ```
+                        df[df['season']==2017]['winner'].value_counts().idxmax()
+                        ```
+                    
+2023-08-02 16:23:06 [INFO] 
+Code running:
+```
+df[df['season'] == 2017]['winner'].value_counts().idxmax()
+```
+2023-08-02 16:23:06 [INFO] Answer: Mumbai Indians
+2023-08-02 16:23:06 [INFO] Executed in: 7.688892364501953s
+2023-08-02 16:23:43 [INFO] Running PandasAI with starcoder LLM...
+2023-08-02 16:23:43 [INFO] Prompt ID: 9de03114-6c87-427f-beb1-7ad250e4440e
+2023-08-02 16:23:56 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+df = pd.read_csv('https://raw.githubusercontent.com/selva86/datasets/master/CricInfo.csv')
+                        ```
+                    
+2023-08-02 16:23:56 [INFO] 
+Code running:
+```
+
+```
+2023-08-02 16:23:56 [INFO] Answer: 
+2023-08-02 16:23:56 [INFO] Executed in: 12.512072801589966s
+2023-08-24 13:11:38 [INFO] Running PandasAI with starcoder LLM...
+2023-08-24 13:11:38 [INFO] Prompt ID: 021ffc47-4ba8-439a-a94d-88fb801bc756
+2023-10-15 16:16:19 [INFO] Running PandasAI with starcoder LLM...
+2023-10-15 16:16:19 [INFO] Prompt ID: 8e410001-a5ee-4187-aa4a-03c3749862ad
+2023-10-15 16:16:24 [INFO] 
+                        Code generated:
+                        ```
+                        df.loc[df['Total Completions of both Pathways'] == 'Yes', 'Total Completions of both Pathways'].count()
+                        ```
+                    
+2023-10-15 16:16:24 [INFO] 
+Code running:
+```
+df.loc[df['Total Completions of both Pathways'] == 'Yes',
+    'Total Completions of both Pathways'].count()
+```
+2023-10-15 16:16:24 [INFO] Answer: 
+2023-10-15 16:16:24 [INFO] Executed in: 4.79970908164978s
+2023-10-15 16:16:43 [INFO] Running PandasAI with starcoder LLM...
+2023-10-15 16:16:43 [INFO] Prompt ID: e223fbd1-fbc2-4155-8bab-8bb83fa70f78
+2023-10-15 16:16:47 [INFO] 
+                        Code generated:
+                        ```
+                        df['Redemption Status'].value_counts()
+                        ```
+                    
+2023-10-15 16:16:47 [INFO] 
+Code running:
+```
+df['Redemption Status'].value_counts()
+```
+2023-10-15 16:16:47 [INFO] Answer: Yes    80
+No     64
+Name: Redemption Status, dtype: int64
+2023-10-15 16:16:47 [INFO] Executed in: 3.599923610687256s
+2023-10-15 16:17:15 [INFO] Running PandasAI with starcoder LLM...
+2023-10-15 16:17:15 [INFO] Prompt ID: 6ca9337c-6d2a-4e34-b949-7f1a73ee4bbf
+2023-10-15 16:17:18 [INFO] 
+                        Code generated:
+                        ```
+                        df[df['Total Completions of both Pathways Redemption Status'] == 'No']
+                        ```
+                    
+2023-10-15 16:17:18 [INFO] 
+Code running:
+```
+df[df['Total Completions of both Pathways Redemption Status'] == 'No']
+```
+2023-10-15 16:17:27 [INFO] Answer: 
+2023-10-15 16:17:27 [INFO] Executed in: 11.885239124298096s
+2023-10-15 16:17:58 [INFO] Running PandasAI with starcoder LLM...
+2023-10-15 16:17:58 [INFO] Prompt ID: 44cf0fb8-ead9-4ab1-94a3-3782059b0ffa
+2023-10-15 16:18:03 [INFO] 
+                        Code generated:
+                        ```
+                        df.groupby(['Student Name', 'Redemption Status']).size().unstack().plot(kind='bar', stacked=True)
+                        ```
+                    
+2023-10-15 16:18:03 [INFO] 
+Code running:
+```
+df.groupby(['Student Name', 'Redemption Status']).size().unstack().plot(kind
+    ='bar', stacked=True)
+```
+2023-10-15 16:18:05 [INFO] Answer: 
+2023-10-15 16:18:05 [INFO] Executed in: 6.588383913040161s
