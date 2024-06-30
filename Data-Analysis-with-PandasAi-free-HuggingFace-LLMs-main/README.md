@@ -1,4 +1,4 @@
-## Risk managemnet 
+## Risk management 
 
 ### Python version used in this project
 
