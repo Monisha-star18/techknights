@@ -1,4 +1,4 @@
-## Data Analysis with PandasAi free HuggingFace LLMs
+## Risk managemnet 
 
 ### Python version used in this project
 
